@@ -1,1 +1,16 @@
-<p>auth works!</p>
+<form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px"[formGroup]="AuthForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="Nome" formControlName="nomeUsuario">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>E-mail</mat-label>
+    <input matInput placeholder="Email" type="email" formControlName="emailUsuario">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Grupo</mat-label>
+    <input matInput placeholder="Grupo" formControlName="grupoUsuario">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="OnLogin()">Login</button>
+  <button mat-raised-button color="warn" (click)="OnSignUp()">Sign Up</button>
+</form>
