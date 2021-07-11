@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gina-app-f2bbf": {
+      "hosting": {
+        "gina-app": [
+          "gina-app-f2bbf"
+        ]
+      }
+    }
+  }
+}
