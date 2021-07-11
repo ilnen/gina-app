@@ -1,16 +1,22 @@
-<form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px"[formGroup]="AuthForm">
-  <mat-form-field appearance="fill">
-    <mat-label>Nome</mat-label>
-    <input matInput placeholder="Nome" formControlName="nomeUsuario">
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>E-mail</mat-label>
-    <input matInput placeholder="Email" type="email" formControlName="emailUsuario">
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Grupo</mat-label>
-    <input matInput placeholder="Grupo" formControlName="grupoUsuario">
-  </mat-form-field>
-  <button mat-raised-button color="primary" (click)="OnLogin()">Login</button>
-  <button mat-raised-button color="warn" (click)="OnSignUp()">Sign Up</button>
-</form>
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <h1>Cadastro Gina App</h1>
+  <form [formGroup]="AuthForm" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <mat-form-field appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="nomeUsuario">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>E-mail</mat-label>
+      <input matInput type="email" formControlName="emailUsuario">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Grupo</mat-label>
+      <input matInput formControlName="grupoUsuario">
+    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="5px">
+      <button mat-raised-button color="primary" (click)="OnLogin()">Login</button>
+      <button mat-raised-button color="warn" (click)="OnSignUp()" disabled>Sign Up</button>
+    </div>
+  </form>
+</div>
+
