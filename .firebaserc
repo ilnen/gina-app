@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gina-app-f2bbf": {
+      "hosting": {
+        "gina-app": [
+          "gina-app-f2bbf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gina-app-f2bbf"
+  }
+}

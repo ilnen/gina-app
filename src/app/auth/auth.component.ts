@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { AngularFireAuth } from "@angular/fire/auth";
+import firebase from 'firebase/app';
 
 @Component({
   selector: 'app-auth',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
 
-  constructor() { }
+  constructor(public auth: AngularFireAuth){}
+
+  AuthForm = new FormGroup({
+    nomeUsuario: new FormControl(''),
+    emailUsuario: new FormControl(''),
+    grupoUsuario: new FormControl('')
+  })
+
 
   ngOnInit(): void {
   }
+
+  OnLogin() {
+    this.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    console.log(this.AuthForm.value)
+  }
+
+  OnLogout() {
+    this.auth.signOut
+  }
+
+  OnSignUp(): void {
+    console.log(this.AuthForm.value)
+  }
+
+
+
+
 
 }
