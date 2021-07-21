@@ -1,0 +1,23 @@
+.avatar{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 100px;
+  border-radius: 50%;
+}
+.nome{
+  font-size: 1.2rem;
+  color: goldenrod;
+  text-align: center;
+  font-weight: 500;
+}
+
+.designation {
+  font-size: 0.7rem;
+  color: lightgrey;
+  text-align: center;
+}
+
+mat-sidenav-container {
+  height: 50%;
+}

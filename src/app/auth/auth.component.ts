@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AngularFireAuth } from "@angular/fire/auth";
 import firebase from 'firebase/app';
 
@@ -24,7 +24,6 @@ export class AuthComponent implements OnInit {
 
   OnLogin() {
     this.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-    console.log(this.AuthForm.value)
   }
 
   OnLogout() {

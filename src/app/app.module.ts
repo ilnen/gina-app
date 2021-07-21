@@ -4,20 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
-import { FotoComponent } from './foto/foto.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './auth/auth.module';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
+import { MenuLateralModule } from './toolbar/toolbar.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FotoComponent,
     FormComponent
   ],
   imports:[
+    MenuLateralModule,
     BrowserModule,
     BrowserAnimationsModule,
     AuthModule,
