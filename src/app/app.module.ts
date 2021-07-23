@@ -3,24 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
-import { FotoComponent } from './foto/foto.component';
 
+
+import { CadastroObjetivoModule } from './cadastro-objetivo/cadastro-objetivo.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './auth/auth.module';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FotoComponent,
-    FormComponent
   ],
+
   imports:[
     BrowserModule,
     BrowserAnimationsModule,
     AuthModule,
+    CadastroObjetivoModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase)],
   exports: [],

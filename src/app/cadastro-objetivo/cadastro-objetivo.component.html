@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+
+<mat-toolbar fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <span>Desafios</span>
+</mat-toolbar>
+git push
+<form [formGroup]='CadForm' fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <mat-form-field  appearance="fill">
+    <mat-label>DESAFIO</mat-label>
+    <textarea matInput placeholder="Como podemos..."></textarea>
+  </mat-form-field>
+
+  <mat-form-field  appearance="fill">
+    <mat-label>RESUMO</mat-label>
+    <textarea matInput placeholder="Breve resumo..."></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="clickButton()">Enviar</button>
+
+</form>
+</div>
