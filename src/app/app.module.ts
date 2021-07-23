@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
 
+
+import { CadastroObjetivoModule } from './cadastro-objetivo/cadastro-objetivo.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './auth/auth.module';
 import { environment } from 'src/environments/environment';
@@ -14,13 +15,14 @@ import { MenuLateralModule } from './toolbar/toolbar.module';
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
   ],
+
   imports:[
     MenuLateralModule,
     BrowserModule,
     BrowserAnimationsModule,
     AuthModule,
+    CadastroObjetivoModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase)],
   exports: [],

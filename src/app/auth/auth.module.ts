@@ -10,8 +10,6 @@ import { MatInputModule } from "@angular/material/input";
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-
 @NgModule({
   declarations: [
     AuthComponent
