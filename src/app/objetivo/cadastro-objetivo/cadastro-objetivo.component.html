@@ -1,0 +1,14 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+<h1>Cadastro de objetivo</h1>
+<form [formGroup]='CadForm' fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <mat-form-field  appearance="fill">
+    <mat-label>Desafio</mat-label>
+    <textarea matInput placeholder="Como podemos..."></textarea>
+  </mat-form-field>
+  <mat-form-field  appearance="fill">
+    <mat-label>Resumo</mat-label>
+    <textarea matInput placeholder="Breve resumo..."></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onCadastrarObjetivo()">Enviar</button>
+</form>
+</div>
